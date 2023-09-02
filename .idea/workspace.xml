@@ -10,20 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f296f105-c191-40b1-9fd2-8b0340f228bb" name="Changes" comment="2iem push">
-      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/martin/labjsp01/messervlets/ListeServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/martin/labjsp01/messervlets/ModifierServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/martin/labjsp01/messervlets/SupprimerServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/ajouterEvaluation.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/contact.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/listeEvaluation.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/modifierEvaluation.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/martin/labjsp01/mesmodels/EvaluationDbContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/martin/labjsp01/mesmodels/EvaluationDbContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/martin/labjsp01/messervlets/AjouterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/martin/labjsp01/messervlets/AjouterServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/martin/labjsp01/messervlets/HomeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/martin/labjsp01/messervlets/HomeServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/acceuil.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/acceuil.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/listeEvaluation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/listeEvaluation.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,8 +111,17 @@
       <option name="presentableId" value="Default" />
       <updated>1693578133948</updated>
       <workItem from="1693578134963" duration="5994000" />
-      <workItem from="1693654747792" duration="4429000" />
+      <workItem from="1693654747792" duration="5059000" />
     </task>
+    <task id="LOCAL-00001" summary="2iem push">
+      <option name="closed" value="true" />
+      <created>1693659653340</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1693659653340</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
