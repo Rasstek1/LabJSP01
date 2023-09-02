@@ -49,7 +49,20 @@ public class EvaluationDbContext implements IEvaluationContext{
         return evaluation;
     }
 
+    // Méthode pour récupérer la liste des évaluations
+    public List<Evaluation> recupererEvaluations() {
+        return listeEvaluations;
+    }
 
+    // Méthode pour récupérer une évaluation par son numéro
+    public Evaluation recupererEvaluationParNumero(int numero) {
+        for (Evaluation e : listeEvaluations) {
+            if (e.getNumero() == numero) {
+                return e;
+            }
+        }
+        return null; // Retourne null si l'évaluation n'est pas trouvée
+    }
 
 }
 

@@ -23,6 +23,11 @@ public class AjouterServlet extends HttpServlet {
     }
 
     @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        // Afficher la page "ajouterEvaluation.jsp"
+        request.getRequestDispatcher("/WEB-INF/ajouterEvaluation.jsp").forward(request, response);
+    }
+    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // Récupérer les paramètres de la requête
         int numero = Integer.parseInt(request.getParameter("numero"));
@@ -32,6 +37,7 @@ public class AjouterServlet extends HttpServlet {
         String courriel = request.getParameter("courriel");
         char sexe = request.getParameter("sexe").charAt(0);
         String note = request.getParameter("note");
+
         // Créer une instance de Calendar et l'initialiser selon vos besoins
         Calendar dateevaluation = Calendar.getInstance();
         String commentaire = request.getParameter("commentaires");
