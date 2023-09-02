@@ -12,7 +12,8 @@
     <title>Nous contacter - Votre site</title>
 </head>
 <body>
-<h1>Nous contacter</h1>
+<div class="content">
+    <h2>Contact</h2>
 <p>Adresse : 123 Rue Principale, Ville</p>
 <p>Téléphone : (123) 456-7890</p>
 <p>Courriel : contact@votresite.com</p>

@@ -13,7 +13,9 @@
     <title>Ajouter Évaluation - Votre site</title>
 </head>
 <body>
-<h1>Ajouter Évaluation</h1>
+<div class="content">
+    <h2>Ajouter Évaluation</h2>
+
 <form action="AjouterServlet" method="post">
     <label for="numero">Numéro :</label>
     <input type="number" id="numero" name="numero" required><br>

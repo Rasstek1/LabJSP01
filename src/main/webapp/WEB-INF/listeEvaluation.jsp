@@ -12,44 +12,10 @@
     <title>Liste des Évaluations - Votre site</title>
 </head>
 <body>
-<h1>Liste des Évaluations</h1>
+<div class="content">
+    <h2>Liste des Évaluations</h2>
 
-<%-- Vérifier si la liste des évaluations est vide --%>
-<% if (evaluations.isEmpty()) { %>
-<p>Aucune évaluation à afficher.</p>
-<% } else { %>
-<table border="1">
-    <tr>
-        <th>Numéro</th>
-        <th>Nom</th>
-        <th>Prénom</th>
-        <th>Téléphone</th>
-        <th>Courriel</th>
-        <th>Sexe</th>
-        <th>Date d'évaluation</th>
-        <th>Note</th>
-        <th>Commentaires</th>
-        <th>Actions</th>
-    </tr>
-    <% for (Evaluation evaluation : evaluations) { %>
-    <tr>
-        <td><%= evaluation.getNumero() %></td>
-        <td><%= evaluation.getNom() %></td>
-        <td><%= evaluation.getPrenom() %></td>
-        <td><%= evaluation.getTelephone() %></td>
-        <td><%= evaluation.getCourriel() %></td>
-        <td><%= evaluation.getSexe() == 'M' ? "Masculin" : "Féminin" %></td>
-        <td><%= evaluation.getDateevaluation().getTime() %></td>
-        <td><%= evaluation.getNote() %></td>
-        <td><%= evaluation.getCommentaire() %></td>
-        <td>
-            <a href="ModifierServlet?numero=<%= evaluation.getNumero() %>">Modifier</a>
-            <a href="SupprimerServlet?numero=<%= evaluation.getNumero() %>">Supprimer</a>
-        </td>
-    </tr>
-    <% } %>
-</table>
-<% } %>
+
 
 <p><a href="accueil.jsp">Retour à l'accueil</a></p>
 
