@@ -24,13 +24,13 @@ public class ModifierServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        // Récupérer le numéro de l'évaluation à modifier depuis les paramètres
+        // Recupere le numero de l'evaluation a modifier depuis les parametres
         int numeroEvaluation = Integer.parseInt(request.getParameter("numero"));
 
-        // Récupérer l'évaluation correspondante depuis la liste
+        // Recupere l'evaluation correspondante depuis la liste
         Evaluation evaluationAModifier = evaluationDbContext.recupererEvaluationParNumero(numeroEvaluation);
 
-        // Envoyer l'évaluation à la page JSP de modification
+        // Envoyer l'evaluation a la page JSP de modification
         request.setAttribute("evaluation", evaluationAModifier);
 
         // Afficher la page de modification "modifierEvaluation.jsp"
@@ -39,7 +39,7 @@ public class ModifierServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        // Récupérer les nouvelles données du formulaire de modification
+        // Recupere les nouvelles donnees du formulaire de modification
         int numero = Integer.parseInt(request.getParameter("numero"));
         String nom = request.getParameter("nom");
         String prenom = request.getParameter("prenom");
@@ -49,21 +49,21 @@ public class ModifierServlet extends HttpServlet {
         String note = request.getParameter("note");
         String commentaire = request.getParameter("commentaires");
 
-        // Récupérer la date depuis les paramètres du formulaire
+        // Recuperee la date depuis les parametres du formulaire
         int annee = Integer.parseInt(request.getParameter("annee"));
         int mois = Integer.parseInt(request.getParameter("mois")) - 1; // Soustraire 1 car les mois commencent à 0
         int jour = Integer.parseInt(request.getParameter("jour"));
 
-        // Créer une instance de Calendar pour la date d'évaluation
+        // Creer une instance de Calendar pour la date d'evaluation
         Calendar dateevaluation = Calendar.getInstance();
         dateevaluation.set(Calendar.YEAR, annee);
         dateevaluation.set(Calendar.MONTH, mois);
         dateevaluation.set(Calendar.DAY_OF_MONTH, jour);
 
-        // Créer une nouvelle instance d'évaluation avec les nouvelles données
+        // Creer une nouvelle instance d'evaluation avec les nouvelles donnees
         Evaluation evaluationModifiee = new Evaluation(numero, nom, prenom, telephone, courriel, sexe, note, dateevaluation, commentaire);
 
-        // Appeler la méthode de modification dans evaluationDbContext
+        // Appeler la methode de modification dans evaluationDbContext
         evaluationDbContext.Modifier(evaluationModifiee);
 
         // Rediriger vers le servlet "ListeServlet" pour afficher la liste mise à jour

@@ -6,7 +6,8 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
-@WebServlet("/index")
+
+@WebServlet({"/accueil"})
 public class HomeServlet extends HttpServlet {
 
     @Override
@@ -15,6 +16,7 @@ public class HomeServlet extends HttpServlet {
         request.getRequestDispatcher("/WEB-INF/accueil.jsp").forward(request, response);
     }
 }
+
 
 
 //le servlet "HomeServlet" hérite de la classe HttpServlet et utilise l'annotation @WebServlet pour définir le chemin

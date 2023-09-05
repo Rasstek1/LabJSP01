@@ -1,4 +1,6 @@
 package com.martin.labjsp01.mesmodels;
+import java.sql.Date;
+
 
 import jakarta.servlet.http.HttpServletRequest;
 
@@ -12,7 +14,7 @@ public class Evaluation {
     public String courriel;
     public char sexe;
     public String note;
-    public Calendar dateevaluation; // Utilisez "Calendar" avec une majuscule initiale
+    public  Calendar dateevaluation; // Utilisez "Calendar" avec une majuscule initiale
     public String commentaire;
 
 public Evaluation() {
@@ -114,11 +116,14 @@ public Evaluation() {
         evaluation.setCourriel(request.getParameter("courriel"));
         evaluation.setSexe(request.getParameter("sexe").charAt(0));
         evaluation.setNote(request.getParameter("note"));
-        // Exemple : établir la date à partir du paramètre dateevaluation
-        // Calendar dateevaluation = Calendar.getInstance();
-        // ... Configurez la date à partir des paramètres de la requête ...
-        // evaluation.setDateevaluation(dateevaluation);
+
+        // Créer une nouvelle instance de Calendar et initialiser la date
+        Calendar dateevaluation = Calendar.getInstance();
+        dateevaluation.setTime(Date.valueOf(request.getParameter("dateevaluation")));
+        evaluation.setDateevaluation(dateevaluation);
+
         evaluation.setCommentaire(request.getParameter("commentaires"));
         return evaluation;
     }
+
 }

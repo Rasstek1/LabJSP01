@@ -1,61 +1,106 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: nitra
-  Date: 2023-09-02
-  Time: 08:16
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Ajouter Évaluation - Votre site</title>
+    <title>Evaluation</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        nav {
+            background-color: #444;
+            text-align: center;
+            padding: 5px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .content {
+            max-width: 800px; /* Largeur */
+            margin: 0 auto; /* Centrer horizontalement */
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
-<div class="content">
-    <h2>Ajouter Évaluation</h2>
+<header>
+    <h1>Les évaluations</h1>
+</header>
+<nav>
+    <a href="acceuil">Accueil</a>
+    <a href="ajouter">Ajouter Évaluation</a>
+    <a href="liste">Liste Évaluations</a>
+    <a href="modifier">Modifier Évaluation</a>
+    <a href="contact">Contact</a>
 
-<form action="AjouterServlet" method="post">
-    <label for="numero">Numéro :</label>
-    <input type="number" id="numero" name="numero" required><br>
+</nav>
 
-    <label for="nom">Nom :</label>
-    <input type="text" id="nom" name="nom" required><br>
+<body>
 
-    <label for="prenom">Prénom :</label>
-    <input type="text" id="prenom" name="prenom" required><br>
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-6">
+            <h2 class="text-center">Ajouter Évaluation</h2>
 
-    <label for="telephone">Téléphone :</label>
-    <input type="text" id="telephone" name="telephone" required><br>
+            <form action="AjouterServlet" method="post">
+                <label for="numero">Numéro :</label>
+                <input type="number" id="numero" name="numero" class="form-control" required>
 
-    <label for="courriel">Courriel :</label>
-    <input type="email" id="courriel" name="courriel" required><br>
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" class="form-control" required>
 
-    <label>Sexe :</label><br>
-    <input type="radio" id="sexeM" name="sexe" value="M" required>
-    <label for="sexeM">Masculin</label>
-    <input type="radio" id="sexeF" name="sexe" value="F" required>
-    <label for="sexeF">Féminin</label><br>
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" class="form-control" required>
+
+                <label for="telephone">Téléphone :</label>
+                <input type="text" id="telephone" name="telephone" class="form-control" required>
+
+                <label for="courriel">Courriel :</label>
+                <input type="email" id="courriel" name="courriel" class="form-control" required>
+
+                <div class="form-check">
+                    <input type="radio" id="sexeM" name="sexe" value="M" class="form-check-input" required>
+                    <label for="sexeM" class="form-check-label">Masculin</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="sexeF" name="sexe" value="F" class="form-check-input" required>
+                    <label for="sexeF" class="form-check-label">Féminin</label>
+                </div>
 
 
-    <label for="dateevaluation">Date d'évaluation :</label>
-    <input type="date" id="dateevaluation" name="dateevaluation" required><br>
+                <label for="dateevaluation">Date d'évaluation :</label>
+                <input type="date" id="dateevaluation" name="dateevaluation" class="form-control" required>
 
-    <label for="note">Note :</label>
-    <select id="note" name="note" required>
-        <option value="Très bien">Très bien</option>
-        <option value="Bien">Bien</option>
-        <option value="Moyen">Moyen</option>
-        <option value="Médiocre">Médiocre</option>
-    </select><br>
+                <label for="note">Note :</label>
+                <select id="note" name="note" class="form-control" required>
+                    <option value="Très bien">Très bien</option>
+                    <option value="Bien">Bien</option>
+                    <option value="Moyen">Moyen</option>
+                    <option value="Médiocre">Médiocre</option>
+                </select>
 
-    <label for="commentaires">Commentaires :</label><br>
-    <textarea id="commentaires" name="commentaires" rows="4" cols="50"></textarea><br>
+                <label for="commentaires">Commentaires :</label><br>
+                <textarea id="commentaires" name="commentaires" class="form-control" rows="4"></textarea>
 
-    <input type="submit" value="Envoyer">
-    <input type="button" value="Annuler" onclick="confirmerAnnulation()">
-</form>
+                <input type="submit" value="Envoyer" class="btn btn-primary mt-3">
+                <input type="button" value="Annuler" onclick="confirmerAnnulation()" class="btn btn-secondary mt-3">
+            </form>
+        </div>
+    </div>
+</div>
 
 <script>
     function confirmerAnnulation() {
@@ -73,5 +118,9 @@
         }
     }
 </script>
+
 </body>
 </html>
+```
+
+

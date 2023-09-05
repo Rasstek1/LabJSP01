@@ -24,10 +24,10 @@ public class ListeServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        // Récupérer la liste des évaluations depuis le contexte
+        // Recupere la liste des evaluation depuis le contexte
         List<Evaluation> evaluations = evaluationDbContext.recupererEvaluations();
 
-        // Envoyer la liste des évaluations à la page JSP
+        // Envoyer la liste des évaluations a la page JSP
         request.setAttribute("evaluations", evaluations);
 
         // Afficher la page "listeEvaluation.jsp"

@@ -9,15 +9,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f296f105-c191-40b1-9fd2-8b0340f228bb" name="Changes" comment="3iem push">
+    <list default="true" id="f296f105-c191-40b1-9fd2-8b0340f228bb" name="Changes" comment="5iem push">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/acceuil.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/martin/labjsp01/mesmodels/Evaluation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/martin/labjsp01/mesmodels/Evaluation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/martin/labjsp01/messervlets/AjouterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/martin/labjsp01/messervlets/AjouterServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/martin/labjsp01/messervlets/HomeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/martin/labjsp01/messervlets/HomeServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/acceuil.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/martin/labjsp01/messervlets/ListeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/martin/labjsp01/messervlets/ListeServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/martin/labjsp01/messervlets/ModifierServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/martin/labjsp01/messervlets/ModifierServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/ajouterEvaluation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/ajouterEvaluation.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/contact.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/contact.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/listeEvaluation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/listeEvaluation.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/modifierEvaluation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/modifierEvaluation.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +91,7 @@
       <deployment>
         <artifact name="LabJSP01:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/LabJSP01_war_exploded" />
+            <option name="CONTEXT_PATH" value="/LabJSP01" />
           </settings>
         </artifact>
       </deployment>
@@ -98,6 +103,54 @@
       <predefined_log_file id="Tomcat Manager" />
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="60279" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
         <option name="USE_ENV_VARIABLES" value="true" />
         <STARTUP>
@@ -132,7 +185,7 @@
       <workItem from="1693578134963" duration="5994000" />
       <workItem from="1693654747792" duration="5270000" />
       <workItem from="1693663902346" duration="246000" />
-      <workItem from="1693664158591" duration="2741000" />
+      <workItem from="1693664158591" duration="14018000" />
     </task>
     <task id="LOCAL-00001" summary="2iem push">
       <option name="closed" value="true" />
@@ -150,7 +203,23 @@
       <option name="project" value="LOCAL" />
       <updated>1693663748694</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="4iem push">
+      <option name="closed" value="true" />
+      <created>1693666914712</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1693666914712</updated>
+    </task>
+    <task id="LOCAL-00004" summary="5iem push">
+      <option name="closed" value="true" />
+      <created>1693667044732</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1693667044732</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +228,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2iem push" />
     <MESSAGE value="3iem push" />
-    <option name="LAST_COMMIT_MESSAGE" value="3iem push" />
+    <MESSAGE value="4iem push" />
+    <MESSAGE value="5iem push" />
+    <option name="LAST_COMMIT_MESSAGE" value="5iem push" />
   </component>
 </project>

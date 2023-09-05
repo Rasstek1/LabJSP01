@@ -7,7 +7,7 @@
     <!-- Configuration du servlet de point d'entrée -->
     <servlet>
         <servlet-name>PointEntreeServlet</servlet-name>
-        <servlet-class>com.martin.labjsp01.PointEntreeServlet</servlet-class>
+        <servlet-class>com.martin.labjsp01.messervlets.PointEntreeServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>

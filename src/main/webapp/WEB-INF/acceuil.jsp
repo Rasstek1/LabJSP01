@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
-        /* Votre style CSS ici */
+
 
         body {
             font-family: Arial, sans-serif;
@@ -38,7 +38,7 @@
 </head>
 <body>
 <header>
-    <h1>Les évaluations dsfjhbdskfjhb</h1>
+    <h1>Les évaluations</h1>
 </header>
 <nav>
     <a href="acceuil">Accueil</a>
@@ -49,7 +49,9 @@
 </nav>
 
 <div class="container">
-    <!-- Votre contenu ici -->
+<p>
+    Bienvenue sur la page de liste d'évaluations !
+</p>
 </div>
 
 <!-- Scripts Bootstrap -->
@@ -63,5 +65,3 @@
         crossorigin="anonymous"></script>
 </body>
 </html>
-
-

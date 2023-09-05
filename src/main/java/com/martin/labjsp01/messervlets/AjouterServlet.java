@@ -11,7 +11,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.Calendar;
 
-@WebServlet("/ajouter")
+@WebServlet("/ajouter")// le servlet "AjouterServlet" hérite de la classe HttpServlet et utilise l'annotation @WebServlet pour définir le chemin ("/ajouter") auquel le servlet répondra.
 public class AjouterServlet extends HttpServlet {
 
     private EvaluationDbContext evaluationDbContext;
