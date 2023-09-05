@@ -25,7 +25,7 @@ public class AjouterServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // Afficher la page "ajouterEvaluation.jsp"
-        request.getRequestDispatcher("/WEB-INF/ajouterEvaluation.jsp").forward(request, response);
+        request.getRequestDispatcher("/pagejsp/ajouterEvaluation.jsp").forward(request, response);
     }
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -50,7 +50,7 @@ public class AjouterServlet extends HttpServlet {
         evaluationDbContext.Ajouter(nouvelleEvaluation);
 
         // Rediriger vers la page d'accueil après l'ajout
-        response.sendRedirect(request.getContextPath() + "/accueil");
+        response.sendRedirect(request.getContextPath() + "pagejsp/accueil");
     }
 }
 

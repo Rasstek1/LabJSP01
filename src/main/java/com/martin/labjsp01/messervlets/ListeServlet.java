@@ -31,7 +31,7 @@ public class ListeServlet extends HttpServlet {
         request.setAttribute("evaluations", evaluations);
 
         // Afficher la page "listeEvaluation.jsp"
-        request.getRequestDispatcher("/WEB-INF/listeEvaluation.jsp").forward(request, response);
+        request.getRequestDispatcher("/pagejsp/listeEvaluation.jsp").forward(request, response);
     }
 }
 

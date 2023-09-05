@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<%@ include file="WEB-INF/header.jsp" %>
+<%@ include file="pagejsp/header.jsp" %>
 
 <div class="container">
     <!-- Votre contenu ici -->

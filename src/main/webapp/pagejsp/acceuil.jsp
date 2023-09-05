@@ -1,14 +1,22 @@
-
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <body>
 
 <%@ include file="header.jsp" %>
 
-<div class="container">
-    <h1>Les évaluations</h1>
-<p>
-    Bienvenue sur la page de liste d'évaluations !
-</p>
+
+<body>
+
+
+
+
+<div class="content">
+    <h1>Bienvenue sur notre site!</h1>
+    <p>Voici du texte et des images représentant la page d'accueil de notre site.</p>
+    <!-- Insérez le contenu de la page d'accueil ici -->
 </div>
+</body>
+</html>
+
 
 <!-- Scripts Bootstrap -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

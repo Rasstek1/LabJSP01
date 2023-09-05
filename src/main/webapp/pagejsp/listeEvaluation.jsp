@@ -33,7 +33,7 @@
     </tr>
     <% for (Evaluation evaluation : evaluations) { %>
     <tr>
-        <td><%= evaluation.getNumero() %></td>
+        <td>${evaluation.getNumero()}</td>
         <td><%= evaluation.getNom() %></td>
         <td><%= evaluation.getPrenom() %></td>
         <td><%= evaluation.getTelephone() %></td>

@@ -14,7 +14,7 @@ public class Evaluation {
     public String courriel;
     public char sexe;
     public String note;
-    public  Calendar dateevaluation; // Utilisez "Calendar" avec une majuscule initiale
+    public  static Calendar dateevaluation; // Utilisez "Calendar" avec une majuscule initiale
     public String commentaire;
 
 public Evaluation() {
