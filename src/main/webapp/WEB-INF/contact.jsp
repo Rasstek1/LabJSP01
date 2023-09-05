@@ -6,53 +6,10 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Evaluation</title>
-    <style>
 
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-        }
-        nav {
-            background-color: #444;
-            text-align: center;
-            padding: 5px;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-        .content {
-            max-width: 800px; /* Largeur */
-            margin: 0 auto; /* Centrer horizontalement */
-            padding: 20px;
-        }
-    </style>
-</head>
 <body>
-<header>
-    <h1>Les évaluations</h1>
-</header>
-<nav>
-    <a href="acceuil">Accueil</a>
-    <a href="ajouter">Ajouter Évaluation</a>
-    <a href="liste">Liste Évaluations</a>
-    <a href="modifier">Modifier Évaluation</a>
-    <a href="contact">Contact</a>
 
-</nav>
-
+<%@ include file="header.jsp" %>
 
 <div class="content">
     <h2>Contact</h2>
@@ -71,4 +28,6 @@
 </form>
 
 </div>
+
+</body>
 
