@@ -13,7 +13,7 @@
 
 <div class="content">
     <h2>Contact</h2>
-<p>Adresse : 123 Rue Principale, Ville</p>
+<p>Adresse : 123 Rue Principale, Saint-Sacrement</p>
 <p>Téléphone : (123) 456-7890</p>
 <p>Courriel : contact@email.com</p>
 <h2>Envoyez-nous un courriel :</h2>

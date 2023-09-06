@@ -5,14 +5,23 @@
     <title>Evaluation</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet"  href="${pageContext.request.contextPath}/res/css/header.css">
 </head>
 <body>
 
-<%@ include file="pagejsp/header.jsp" %>
+<jsp:include page="/pagejsp/header.jsp" />
+
 
 <div class="container">
-    <!-- Votre contenu ici -->
+    <p>Allo je suis l'index putain de merde!!!</p>
 </div>
+
+
+
+
+
+
+
 
 <!-- Scripts Bootstrap -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -25,5 +34,3 @@
         crossorigin="anonymous"></script>
 </body>
 </html>
-
-

@@ -1,5 +1,8 @@
+<%@ page import="mesmodels.Evaluation" %>
+<%@ page import="java.text.SimpleDateFormat" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
+<%@ page import="mesmodels.Evaluation" %>
+<%@ page import="java.text.SimpleDateFormat" %>
 
 <body>
 
@@ -7,6 +10,14 @@
 
 <body>
 <h1>Modifier Évaluation</h1>
+
+<%
+    Evaluation evaluation = (Evaluation) request.getAttribute("evaluation");
+    SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
+    String formateDate = dateFormat.format(evaluation.getDateEvaluation().getTime());
+%>
+
+
 <form action="ModifierServlet" method="post">
     <label for="numero">Numéro :</label>
     <input type="number" id="numero" name="numero" required><br>
@@ -14,8 +25,8 @@
     <input type="text" id="nom" name="nom" required><br>
     <label for="prenom">Prénom :</label>
     <input type="text" id="prenom" name="prenom" required><br>
-    <label for="dateevaluation">Date d'évaluation :</label>
-    <input type="date" id="dateevaluation" name="dateevaluation" required><br>
+    <label for="dateEvaluation" class="form-label">Date d'Évaluation</label>
+    <input type="text" class="form-control" id="dateEvaluation" name="dateEvaluation" value="<%= formateDate %>">
     <label>Sexe :</label><br>
     <input type="radio" id="sexeM" name="sexe" value="M" required>
     <label for="sexeM">Masculin</label>

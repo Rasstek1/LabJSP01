@@ -1,34 +1,6 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-    <style>
+<%@ page import="mesmodels.Evaluation" %>
 
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-        }
-        nav {
-            background-color: #444;
-            text-align: center;
-            padding: 5px;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-        .content {
-            max-width: 800px; /* Largeur */
-            margin: 0 auto; /* Centrer horizontalement */
-            padding: 20px;
-        }
-    </style>
-</head>
 <body>
 
 <%@ include file="header.jsp" %>
