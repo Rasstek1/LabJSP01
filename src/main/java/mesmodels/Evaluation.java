@@ -110,8 +110,10 @@ public class Evaluation {
         this.commentaires = commentaires;
     }
 
+    //Constructeur par defaut
     public Evaluation() {
     }
+
     //Methodes
     private static Calendar converDate(String strDate){
         SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");

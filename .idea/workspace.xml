@@ -10,28 +10,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f296f105-c191-40b1-9fd2-8b0340f228bb" name="Changes" comment="5iem push">
-      <change afterPath="$PROJECT_DIR$/src/main/java/mesmodels/Evaluation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mesmodels/EvaluationDbContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/messervlets/AjouterServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/messervlets/HomeServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/messervlets/ListeServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/messervlets/ModifierServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/messervlets/SupprimerServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/LOGO.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/martin/labjsp01/mesmodels/Evaluation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/martin/labjsp01/mesmodels/EvaluationDbContext.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/martin/labjsp01/mesmodels/IEvaluationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mesmodels/IEvaluationContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/martin/labjsp01/messervlets/AjouterServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/martin/labjsp01/messervlets/HomeServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/martin/labjsp01/messervlets/ListeServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/martin/labjsp01/messervlets/ModifierServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/martin/labjsp01/messervlets/SupprimerServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mesmodels/Evaluation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mesmodels/Evaluation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mesmodels/EvaluationDbContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mesmodels/EvaluationDbContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/messervlets/HomeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/messervlets/HomeServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/messervlets/ListeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/messervlets/ListeServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/messervlets/ModifierServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/messervlets/ModifierServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/LOGO.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pagejsp/acceuil.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pagejsp/accueil.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pagejsp/accueil.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pagejsp/accueil.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/pagejsp/ajouterEvaluation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pagejsp/ajouterEvaluation.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/pagejsp/contact.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pagejsp/contact.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/pagejsp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pagejsp/header.jsp" afterDir="false" />
@@ -49,6 +39,7 @@
         <option value="Interface" />
         <option value="Class" />
         <option value="Jsp File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -65,12 +56,18 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: -1
+  &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="2Uq6QMryLZSffeDAH7FQRKsDk7H" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -85,54 +82,34 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/nitra/IdeaProjects/LabJSP01/src/main/webapp/pagejsp/img",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/nitra/Documents/JSP_Project/LabJSP01/src/main/resources",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15917969",
+    "project.structure.side.proportion": "0.22906977",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\nitra\IdeaProjects\LabJSP01\src\main\webapp\pagejsp\img" />
-      <recent name="C:\Users\nitra\IdeaProjects\LabJSP01\src\main\resources\img" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\nitra\IdeaProjects\LabJSP01\src\main\java\resources\css" />
-      <recent name="C:\Users\nitra\IdeaProjects\LabJSP01\src\main\java\resources\css\css" />
+      <recent name="C:\Users\nitra\Documents\JSP_Project\LabJSP01\src\main\resources\css" />
+      <recent name="C:\Users\nitra\Documents\JSP_Project\LabJSP01\src\main\webapp\pagejsp" />
       <recent name="C:\Users\nitra\IdeaProjects\LabJSP01\src\main\webapp" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="TomeeConfiguration" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
-      <deployment />
-      <server-settings />
-      <predefined_log_file enabled="true" id="Tomcat" />
-      <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file id="Tomcat Manager" />
-      <predefined_log_file id="Tomcat Host Manager" />
-      <predefined_log_file id="Tomcat Localhost Access" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Tomcat 10.1.12" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.12" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/LabJSP01/" />
-      <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-      <option name="UPDATING_POLICY" value="update-resources" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/LabJSP01/pagejsp/accueil.jsp" />
       <deployment>
         <artifact name="LabJSP01:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="" />
+            <option name="CONTEXT_PATH" value="/LabJSP01" />
           </settings>
         </artifact>
       </deployment>
@@ -227,6 +204,10 @@
       <workItem from="1693654747792" duration="5270000" />
       <workItem from="1693663902346" duration="246000" />
       <workItem from="1693664158591" duration="16409000" />
+      <workItem from="1693933201587" duration="31000" />
+      <workItem from="1693933919257" duration="9340000" />
+      <workItem from="1694134263732" duration="2701000" />
+      <workItem from="1694181250668" duration="8819000" />
     </task>
     <task id="LOCAL-00001" summary="2iem push">
       <option name="closed" value="true" />

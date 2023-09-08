@@ -8,6 +8,16 @@
 <%@ page import="java.util.List" %>
 <%@ page import="java.text.SimpleDateFormat" %>
 <%@ page import="java.util.Calendar" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Accueil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/res/css/header.css">
+</head>
 
 
 <body>
@@ -67,6 +77,8 @@
 <p><a href="accueil.jsp">Retour à l'accueil</a></p>
 
 </body>
+</html>
+```
 
 
 

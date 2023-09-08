@@ -13,7 +13,7 @@ import java.io.IOException;
 public class ListeServlet extends HttpServlet {
 
     private EvaluationDbContext EvaluationDbContext = new EvaluationDbContext();
-    private String path = "/pagejsp/listeEvaluations.jsp";
+    private String path = "/pagejsp/listeEvaluation.jsp";
 
     private void view(String viewname, HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setAttribute("listeEvaluation", EvaluationDbContext.getListeEvalutions());

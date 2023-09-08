@@ -9,7 +9,7 @@ import java.io.IOException;
 @WebServlet(name = "HomeServlet", value = "/HomeServlet")
 public class HomeServlet extends HttpServlet {
 
-    private String path = "pagejsp/acceuil.jsp";
+    private String path = "pagejsp/accueil.jsp";
     //Methode de redirection
     private void view(String viewname, HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.getRequestDispatcher(viewname).forward(request, response);

@@ -11,17 +11,17 @@ import java.io.IOException;
 @WebServlet(name = "ModifierServlet", value = "/ModifierServlet")
 public class ModifierServlet extends HttpServlet {
 
-    private EvaluationDbContext EvaluationDbContext = new EvaluationDbContext();
+    private EvaluationDbContext evaluationDbContext = new EvaluationDbContext();
     @Override
     public void init() throws ServletException {
         super.init();
 
     }
 
-
+//Validation du numero et de la liste devaluation
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // insérer votre code
-        Evaluation e = EvaluationDbContext.rechercher(Integer.parseInt(request.getParameter("numero")));
+        Evaluation e = evaluationDbContext.rechercher(Integer.parseInt(request.getParameter("numero")));
         request.setAttribute("evaluation", e);
 
         RequestDispatcher dis = request.getRequestDispatcher("/pagejsp/modifierEvaluation.jsp");
@@ -31,8 +31,8 @@ public class ModifierServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         //insérer votre code
         Evaluation e = new Evaluation();
-        e = e.mapper(request);
-        EvaluationDbContext.Modifier(e);
+        e = Evaluation.mapper(request);
+        evaluationDbContext.Modifier(e);
 
         response.sendRedirect(request.getContextPath()+"/ListeServlet");
     }

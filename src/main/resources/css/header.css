@@ -1,22 +1,14 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+/* Styles pour le header */
 header {
-    background-color: red;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
+    background-color: white; /* Fond blanc pour la partie supérieure */
+    text-align: left;
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-.logo {
-    margin-right: 10px;
+    justify-content: flex-start; /* Aligner les éléments à l'extrémité gauche */
+    align-items: center; /* Centrer verticalement */
+    padding: 10px;
 }
 nav {
-    background-color: #444;
+    background-color: #333; /* Fond gris foncé pour la partie inférieure du nav */
     text-align: center;
     padding: 5px;
 }
@@ -24,4 +16,19 @@ nav a {
     color: #fff;
     text-decoration: none;
     margin: 0 10px;
+}
+.logo {
+    margin-right: 10px;
+}
+h1 {
+    margin: 0; /* Supprimer la marge par défaut du titre */
+    color: #000; /* Couleur du texte du titre (noir ici) */
+    font-size: 16px; /* Taille de la police du titre (16px ici) */
+}
+/* Styles pour la bannière */
+.banner {
+
+    background-size: cover; /* Pour s'assurer que l'image couvre toute la largeur */
+    height: 100px; /* Hauteur de la bannière  */
+
 }

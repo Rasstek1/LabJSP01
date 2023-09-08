@@ -1,22 +1,32 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="mesmodels.Evaluation" %>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Accueil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/res/css/header.css">
+</head>
+
 <body>
 
 <%@ include file="header.jsp" %>
 
 
-<body>
+
 
 
 
 
 <div class="content">
-    <h1>Bienvenue sur notre site!</h1>
+    <h2>Bienvenue sur notre site!</h2>
     <p>Voici du texte et des images représentant la page d'accueil de notre site.</p>
-    <!-- Insérez le contenu de la page d'accueil ici -->
+
 </div>
-</body>
-</html>
+
+
 
 
 <!-- Scripts Bootstrap -->
@@ -29,3 +39,4 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 </body>
+</html>

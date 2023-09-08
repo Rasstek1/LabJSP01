@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<jsp:include page="/pagejsp/header.jsp" />
+
 
 
 <div class="container">
