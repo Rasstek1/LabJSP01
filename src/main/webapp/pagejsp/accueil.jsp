@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/res/css/header.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/res/css/accueil.css">
 </head>
 
 <body>
@@ -21,8 +22,20 @@
 
 
 <div class="content">
-    <h2>Bienvenue sur notre site!</h2>
-    <p>Voici du texte et des images représentant la page d'accueil de notre site.</p>
+    <div class="content">
+        <h2>Bienvenue sur Evaluation Paradise</h2>
+        <p>Découvrez la puissance de l'évaluation collaborative !</p>
+        <p>Vous êtes à la recherche d'un outil convivial pour gérer et consulter des évaluations en ligne ? Vous êtes au bon endroit ! Evaluation Paradise vous offre une plateforme simple et intuitive pour recueillir, suivre et partager des évaluations.</p>
+        <p><strong>Pourquoi Evaluation Paradise ?</strong></p>
+        <ul>
+            <li>Facilité d'utilisation : Notre interface conviviale rend la gestion des évaluations aussi simple que possible, que vous soyez un utilisateur régulier ou que vous découvriez la plateforme pour la première fois.</li>
+            <li>Collaboration en temps réel : Travaillez en équipe sur des évaluations en temps réel. Plus besoin de jongler avec des feuilles de calcul ou des e-mails interminables.</li>
+            <li>Personnalisation : Adaptez vos formulaires d'évaluation selon vos besoins spécifiques. Créez des questions sur mesure et collectez les données qui comptent le plus pour vous.</li>
+            <li>Visualisation des données : Explorez vos évaluations grâce à des graphiques et des tableaux de bord interactifs. Comprenez rapidement les tendances et les points forts.</li>
+            <li>Sécurité des données : Vos évaluations et données personnelles sont en sécurité avec nous. Nous utilisons les dernières technologies de sécurité pour protéger vos informations.</li>
+        </ul>
+    </div>
+
 
 </div>
 
