@@ -21,23 +21,22 @@
 
 
 
-<div class="content">
+<div class="container my-4 p-4 border" style="background-color: #e8faff; max-width: 600px;">
     <div class="content">
-        <h2>Bienvenue sur Evaluation Paradise</h2>
-        <p>Découvrez la puissance de l'évaluation collaborative !</p>
-        <p>Vous êtes à la recherche d'un outil convivial pour gérer et consulter des évaluations en ligne ? Vous êtes au bon endroit ! Evaluation Paradise vous offre une plateforme simple et intuitive pour recueillir, suivre et partager des évaluations.</p>
-        <p><strong>Pourquoi Evaluation Paradise ?</strong></p>
-        <ul>
-            <li>Facilité d'utilisation : Notre interface conviviale rend la gestion des évaluations aussi simple que possible, que vous soyez un utilisateur régulier ou que vous découvriez la plateforme pour la première fois.</li>
-            <li>Collaboration en temps réel : Travaillez en équipe sur des évaluations en temps réel. Plus besoin de jongler avec des feuilles de calcul ou des e-mails interminables.</li>
-            <li>Personnalisation : Adaptez vos formulaires d'évaluation selon vos besoins spécifiques. Créez des questions sur mesure et collectez les données qui comptent le plus pour vous.</li>
-            <li>Visualisation des données : Explorez vos évaluations grâce à des graphiques et des tableaux de bord interactifs. Comprenez rapidement les tendances et les points forts.</li>
-            <li>Sécurité des données : Vos évaluations et données personnelles sont en sécurité avec nous. Nous utilisons les dernières technologies de sécurité pour protéger vos informations.</li>
+        <h2 class="text-center" style="font-size: 1.5em;">Bienvenue sur Evaluation Paradise</h2>
+        <p class="lead" style="font-size: 1em;">Découvrez la puissance de l'évaluation collaborative !</p>
+        <p style="font-size: 0.9em;">Vous êtes à la recherche d'un outil convivial pour gérer et consulter des évaluations en ligne ? Vous êtes au bon endroit ! Evaluation Paradise vous offre une plateforme simple et intuitive pour recueillir, suivre et partager des évaluations.</p>
+        <p class="font-weight-bold" style="font-size: 1em;">Pourquoi Evaluation Paradise ?</p>
+        <ul class="list-group list-group-flush" style="font-size: 0.9em;">
+            <li class="list-group-item">Facilité d'utilisation : Notre interface conviviale rend la gestion des évaluations aussi simple que possible, que vous soyez un utilisateur régulier ou que vous découvriez la plateforme pour la première fois.</li>
+            <li class="list-group-item">Collaboration en temps réel : Travaillez en équipe sur des évaluations en temps réel. Plus besoin de jongler avec des feuilles de calcul ou des e-mails interminables.</li>
+            <li class="list-group-item">Personnalisation : Adaptez vos formulaires d'évaluation selon vos besoins spécifiques. Créez des questions sur mesure et collectez les données qui comptent le plus pour vous.</li>
+            <li class="list-group-item">Visualisation des données : Explorez vos évaluations grâce à des graphiques et des tableaux de bord interactifs. Comprenez rapidement les tendances et les points forts.</li>
+            <li class="list-group-item">Sécurité des données : Vos évaluations et données personnelles sont en sécurité avec nous. Nous utilisons les dernières technologies de sécurité pour protéger vos informations.</li>
         </ul>
     </div>
-
-
 </div>
+
 
 
 

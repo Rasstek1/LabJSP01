@@ -9,11 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f296f105-c191-40b1-9fd2-8b0340f228bb" name="Changes" comment="fonctionnel push">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/accueil.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pagejsp/accueil.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pagejsp/accueil.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="f296f105-c191-40b1-9fd2-8b0340f228bb" name="Changes" comment="fonctionnel push" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,6 +22,8 @@
         <option value="Class" />
         <option value="Jsp File" />
         <option value="CSS File" />
+        <option value="AnnotationType" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -69,7 +67,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/nitra/Documents/JSP_Project/LabJSP01/src/main/resources",
+    "last_opened_file_path": "C:/Users/nitra/IdeaProjects/LabJSP01/src/main/resources",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -83,6 +81,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.martin.labjsp01" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\nitra\Documents\JSP_Project\LabJSP01\src\main\resources\css" />
       <recent name="C:\Users\nitra\Documents\JSP_Project\LabJSP01\src\main\webapp\pagejsp" />
@@ -194,6 +195,7 @@
       <workItem from="1693933919257" duration="9340000" />
       <workItem from="1694134263732" duration="2701000" />
       <workItem from="1694181250668" duration="10163000" />
+      <workItem from="1694202587494" duration="4923000" />
     </task>
     <task id="LOCAL-00001" summary="2iem push">
       <option name="closed" value="true" />

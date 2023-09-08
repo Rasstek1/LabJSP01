@@ -24,57 +24,79 @@
 
 <%@ include file="header.jsp" %>
 
-<h1>Liste des Évaluations</h1>
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <div class="p-4 border rounded shadow">
+                <h1 class="text-center">Liste des Évaluations</h1>
 
-<div class="container">
-    <% List<Evaluation> evaluations = (List<Evaluation>) request.getAttribute("listeEvaluation"); %>
+                <div class="container">
+                    <% List<Evaluation> evaluations = (List<Evaluation>) request.getAttribute("listeEvaluation"); %>
 
-    <% if(evaluations == null || evaluations.isEmpty()){ %>
-    <p>Il n'y a pas des Evaluations.</p>
-    <% } else { %>
-    <table class="table">
-        <tr>
-            <th>Numéro</th>
-            <th>Nom</th>
-            <th>Prenom</th>
-            <th>Courriel</th>
-            <th>Telephone</th>
-            <th>Sexe</th>
-            <th>Note</th>
-            <th>Date Evaluation</th>
-            <th>Commentaires</th>
-            <th>Actions</th>
-        </tr>
-        <% for (Evaluation e: evaluations) { %>
-        <tr>
-            <td><%= e.getNumero() %></td>
-            <td><%= e.getNom() %></td>
-            <td><%= e.getPrenom() %></td>
-            <td><%= e.getCourriel() %></td>
-            <td><%= e.getTelephone() %></td>
-            <td><%= e.getSexe() %></td>
-            <td><%= e.getNote() %></td>
-            <td><%
-                SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
-                Calendar dateEvaluation = e.getDateEvaluation();
-                String formateDate = dateFormat.format(dateEvaluation.getTime());
-            %>
-                <%=formateDate%></td>
-            <td><%= e.getCommentaires() %></td>
-            <td>
-                <!-- Modifier Button -->
-                <a href="<%=request.getContextPath()%>/ModifierServlet?numero=<%=e.getNumero()%>" class="btn btn-primary">Modifier</a>
+                    <% if(evaluations == null || evaluations.isEmpty()){ %>
+                    <p>Il n'y a pas des évaluations.</p>
+                    <% } else { %>
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>Numéro</th>
+                            <th>Nom</th>
+                            <th>Prénom</th>
+                            <th>Courriel</th>
+                            <th>Téléphone</th>
+                            <th>Sexe</th>
+                            <th>Note</th>
+                            <th>Date d'évaluation</th>
+                            <th>Commentaires</th>
+                            <th>Actions</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <% for (Evaluation e: evaluations) { %>
+                        <tr>
+                            <td><%= e.getNumero() %></td>
+                            <td><%= e.getNom() %></td>
+                            <td><%= e.getPrenom() %></td>
+                            <td><%= e.getCourriel() %></td>
+                            <td><%= e.getTelephone() %></td>
+                            <td><%= e.getSexe() %></td>
+                            <td><%= e.getNote() %></td>
+                            <td><%
+                                SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
+                                Calendar dateEvaluation = e.getDateEvaluation();
+                                String formattedDate = null;
+                                if (dateEvaluation != null) {
+                                    formattedDate = dateFormat.format(dateEvaluation.getTime());
+                                } else {
+                                    formattedDate = "Date non disponible"; // Vous pouvez mettre ici une valeur par défaut ou une chaîne vide
+                                }
+                            %>
+                                <%=formattedDate%>
+                            </td>
+                            <td><%= e.getCommentaires() %></td>
+                            <td>
+                                <!-- Modifier Button -->
+                                <a href="<%=request.getContextPath()%>/ModifierServlet?numero=<%=e.getNumero()%>" class="btn btn-primary">Modifier</a>
 
-                <!-- Supprimer Button -->
-                <a href="<%=request.getContextPath()%>/SupprimerServlet?numero=<%=e.getNumero()%>" class="btn btn-danger" onclick="return confirm('Voulez-vous vraiment le supprimer ?');">Supprimer</a>
-            </td>
-        </tr>
-        <% } %>
-    </table>
-    <% } %>
+                                <!-- Supprimer Button -->
+                                <a href="<%=request.getContextPath()%>/SupprimerServlet?numero=<%=e.getNumero()%>" class="btn btn-danger" onclick="return confirm('Voulez-vous vraiment le supprimer ?');">Supprimer</a>
+                            </td>
+                        </tr>
+                        <% } %>
+                        </tbody>
+                    </table>
+                    <% } %>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
-<p><a href="accueil.jsp">Retour à l'accueil</a></p>
+<div class="text-center mt-4 mb-4">
+    <a href="${pageContext.request.contextPath}//HomeServlet" class="btn btn-primary">Accueil</a>
+</div>
+
+
 
 </body>
 </html>

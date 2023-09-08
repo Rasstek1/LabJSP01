@@ -115,19 +115,25 @@ public class Evaluation {
     }
 
     //Methodes
-    private static Calendar converDate(String strDate){
+    private static Calendar convertDate(String strDate){
+        if (strDate == null) {
+            // Vous pourriez loguer une erreur ici et/ou lancer une exception
+            return null;
+        }
+
         SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
 
         try{
-            Date parseDate = (Date) dateFormat.parse(strDate);
+            Date parseDate = (Date) dateFormat.parse(strDate);  // Note : Pas besoin de caster en (Date)
             Calendar cal = Calendar.getInstance();
             cal.setTime(parseDate);
             return cal;
         }catch (ParseException e){
-            e.printStackTrace();;
+            e.printStackTrace();
         }
         return null;
     }
+
 
     // Méthode statique pour mapper les données de HttpServletRequest vers Evaluation
     //Cette methode est l`equivalent de serialize en php
@@ -139,7 +145,7 @@ public class Evaluation {
         String telephone = request.getParameter("telephone");
         char sexe = request.getParameter("sexe").charAt(0);
         String note = request.getParameter("note");
-        Calendar dateEvaluation = converDate(request.getParameter("dateEvaluation"));
+        Calendar dateEvaluation = convertDate(request.getParameter("dateEvaluation"));
         String commentaire = request.getParameter("comentaire");
 
         return new Evaluation(numero, nom, prenom, courriel, telephone, sexe, note, dateEvaluation, commentaire);

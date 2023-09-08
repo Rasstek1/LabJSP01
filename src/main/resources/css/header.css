@@ -8,27 +8,42 @@ header {
     padding: 10px;
 }
 nav {
-    background-color: #333; /* Fond gris foncé pour la partie inférieure du nav */
+    background-color: #333;
     text-align: center;
-    padding: 5px;
+
 }
 nav a {
     color: #fff;
     text-decoration: none;
     margin: 0 10px;
 }
+
+.nav-color a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.nav-color a:hover {
+
+    color: cornflowerblue;
+}
+
 .logo {
-    margin-right: 10px;
+    margin-left: 20px;
 }
 h1 {
-    margin: 0; /* Supprimer la marge par défaut du titre */
-    color: #000; /* Couleur du texte du titre (noir ici) */
-    font-size: 16px; /* Taille de la police du titre (16px ici) */
+    margin: 0;
+    color: #000;
+    font-size: 16px;
+    margin-left:10px;
 }
 /* Styles pour la bannière */
 .banner {
 
-    background-size: cover; /* Pour s'assurer que l'image couvre toute la largeur */
+    background-size: cover;
     height: 100px; /* Hauteur de la bannière  */
 
 }

@@ -1,11 +1,13 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="mesmodels.Evaluation" %>
-
+<head>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/res/css/header.css">
+</head>
 
 
 <header class="header-color">
     <div class="logo">
-        <img src="${pageContext.request.contextPath}/res/img/LOGO2.png" alt="Image" width="100">
+        <img src="${pageContext.request.contextPath}/res/img/LOGO.png" alt="Image" width="100">
     </div>
     <h1>EVALUATION PARADISE</h1>
 </header>
@@ -18,8 +20,8 @@
     <a href="${pageContext.request.contextPath}/pagejsp/contact.jsp">Contact</a>
 </nav>
 
-<div class="Banner.jgp">
-    <img src="${pageContext.request.contextPath}/res/img/Banner.jpg" alt="Image" width="100%">
+<div class="Banner">
+    <img src="${pageContext.request.contextPath}/res/img/Banner.png" alt="Image" width="100%">
 </div>
 
 
