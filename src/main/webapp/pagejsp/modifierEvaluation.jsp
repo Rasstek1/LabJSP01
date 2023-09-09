@@ -10,68 +10,81 @@
     <title>Accueil</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/res/css/style.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/res/css/header.css">
+
+    <script src="${pageContext.request.contextPath}/res/js/modif" type="text/javascript"></script>
 </head>
 
 
 <body>
 
-<%@ include file="header.jsp" %>
+<jsp:include page="header.jsp" />
+
 
 <body>
-<h1>Modifier Évaluation</h1>
-
-<%
-    Evaluation evaluation = (Evaluation) request.getAttribute("evaluation");
-    SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
-    String formateDate = dateFormat.format(evaluation.getDateEvaluation().getTime());
-%>
 
 
-<form action="ModifierServlet" method="post">
-    <label for="numero">Numéro :</label>
-    <input type="number" id="numero" name="numero" required><br>
-    <label for="nom">Nom :</label>
-    <input type="text" id="nom" name="nom" required><br>
-    <label for="prenom">Prénom :</label>
-    <input type="text" id="prenom" name="prenom" required><br>
-    <label for="dateEvaluation" class="form-label">Date d'Évaluation</label>
-    <input type="text" class="form-control" id="dateEvaluation" name="dateEvaluation" value="<%= formateDate %>">
-    <label>Sexe :</label><br>
-    <input type="radio" id="sexeM" name="sexe" value="M" required>
-    <label for="sexeM">Masculin</label>
-    <input type="radio" id="sexeF" name="sexe" value="F" required>
-    <label for="sexeF">Féminin</label><br>
-    <label for="commentaires">Commentaires :</label>
-    <textarea id="commentaires" name="commentaires" rows="4" cols="50" required></textarea><br>
-    <label for="note">Note :</label>
-    <select id="note" name="note" required>
-        <option value="Très bien">Très bien</option>
-        <option value="Bien">Bien</option>
-        <option value="Moyen">Moyen</option>
-        <option value="Médiocre">Médiocre</option>
-    </select><br>
-    <input type="submit" value="Envoyer" onclick="return confirm('Êtes-vous sûr de vouloir modifier cette évaluation?')">
-    <input type="reset" value="Annuler" onclick="return confirm('Êtes-vous sûr de vouloir annuler?')">
+<c:set var="evaluation" value="${requestScope.evaluation}" />
+<c:set var="formattedDate" value="" />
+<c:if test="${not empty evaluation.dateEvaluation}">
+    <fmt:formatDate var="formattedDate" value="${evaluation.dateEvaluation}" pattern="dd-MM-yyyy" />
+</c:if>
+
+
+
+<form action="ModifierServlet" method="post" class="p-3 border shadow bg-light" style="max-width: 600px; margin: auto; margin-top: 20px;">
+    <h2 class="text-center">Modifier Évaluation</h2>
+    <div class="mb-3">
+        <label for="numero" class="form-label">Numéro :</label>
+        <input type="number" id="numero" name="numero" class="form-control" required>
+    </div>
+    <div class="mb-3">
+        <label for="nom" class="form-label">Nom :</label>
+        <input type="text" id="nom" name="nom" class="form-control" required>
+    </div>
+    <div class="mb-3">
+        <label for="prenom" class="form-label">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" class="form-control" required>
+    </div>
+    <div class="mb-3">
+        <label for="dateEvaluation" class="form-label">Date d'Évaluation</label>
+        <input type="text" class="form-control" id="dateEvaluation" name="dateEvaluation" value="${formattedDate}" required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Sexe :</label><br>
+        <div class="form-check form-check-inline">
+            <input type="radio" id="sexeM" name="sexe" value="M" class="form-check-input" required>
+            <label for="sexeM" class="form-check-label">Masculin</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" id="sexeF" name="sexe" value="F" class="form-check-input" required>
+            <label for="sexeF" class="form-check-label">Féminin</label>
+        </div>
+    </div>
+    <div class="mb-3">
+        <label for="commentaires" class="form-label">Commentaires :</label>
+        <textarea id="commentaires" name="commentaires" rows="4" cols="50" class="form-control" required></textarea>
+    </div>
+    <div class="mb-3">
+        <label for="note" class="form-label">Note :</label>
+        <select id="note" name="note" class="form-select" required>
+            <option value="Très bien">Très bien</option>
+            <option value="Bien">Bien</option>
+            <option value="Moyen">Moyen</option>
+            <option value="Médiocre">Médiocre</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <input type="submit" value="Envoyer" class="btn btn-primary" onclick="return confirm('Êtes-vous sûr de vouloir modifier cette évaluation?')">
+        <input type="reset" value="Annuler" class="btn btn-secondary" onclick="return confirm('Êtes-vous sûr de vouloir annuler?')">
+    </div>
 </form>
 
-<script>
-    function confirmerAnnulation() {
-        if (confirm("Êtes-vous sûr de vouloir annuler?")) {
-            // Effacer les valeurs saisies dans les champs
-            document.getElementById("numero").value = "";
-            document.getElementById("nom").value = "";
-            document.getElementById("prenom").value = "";
-            document.getElementById("dateevaluation").value = "";
-            document.getElementById("sexeM").checked = false;
-            document.getElementById("sexeF").checked = false;
-            document.getElementById("commentaires").value = "";
-            document.getElementById("note").value = "Très bien";
-        }
-    }
-</script>
+
 </body>
 </html>
 ```
+
 
 

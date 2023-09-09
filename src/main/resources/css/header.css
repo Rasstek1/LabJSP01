@@ -7,11 +7,13 @@ header {
     align-items: center; /* Centrer verticalement */
     padding: 10px;
 }
+
 nav {
     background-color: #333;
     text-align: center;
-
+    height: 20px;
 }
+
 nav a {
     color: #fff;
     text-decoration: none;
@@ -34,12 +36,14 @@ nav a {
 .logo {
     margin-left: 20px;
 }
+
 h1 {
     margin: 0;
     color: #000;
     font-size: 16px;
-    margin-left:10px;
+    margin-left: 10px;
 }
+
 /* Styles pour la bannière */
 .banner {
 

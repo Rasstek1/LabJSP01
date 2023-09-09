@@ -7,18 +7,14 @@
     <title>Accueil</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/res/css/style.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/res/css/header.css">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/res/css/accueil.css">
+
 </head>
 
 <body>
 
-<%@ include file="header.jsp" %>
-
-
-
-
-
+<jsp:include page="header.jsp" />
 
 
 <div class="container my-4 p-4 border" style="background-color: #e8faff; max-width: 600px;">
@@ -37,10 +33,6 @@
     </div>
 </div>
 
-
-
-
-
 <!-- Scripts Bootstrap -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -52,3 +44,12 @@
         crossorigin="anonymous"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+

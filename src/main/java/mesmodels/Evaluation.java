@@ -1,12 +1,9 @@
 package mesmodels;
 
-import java.sql.Date;
+import jakarta.servlet.http.HttpServletRequest;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
-
-
-import jakarta.servlet.http.HttpServletRequest;
 
 public class Evaluation {
     private int numero;
@@ -16,8 +13,9 @@ public class Evaluation {
     private String telephone;
     private char sexe;
     private String note;
-    private Calendar dateEvaluation;
+    private java.sql.Date dateEvaluation;
     private String commentaires;
+
 
 
 
@@ -80,13 +78,14 @@ public class Evaluation {
         this.note = note;
     }
 
-    public Calendar getDateEvaluation() {
+    public java.sql.Date getDateEvaluation() {
         return dateEvaluation;
     }
 
-    public void setDateEvaluation(Calendar dateEvaluation) {
+    public void setDateEvaluation(java.sql.Date dateEvaluation) {
         this.dateEvaluation = dateEvaluation;
     }
+
 
     public String getCommentaires() {
         return commentaires;
@@ -98,7 +97,7 @@ public class Evaluation {
 
 
     //Constructeur
-    public Evaluation(int numero, String nom, String prenom, String courriel, String telephone, char sexe, String note, Calendar dateEvaluation, String commentaires) {
+    public Evaluation(int numero, String nom, String prenom, String courriel, String telephone, char sexe, String note, java.sql.Date dateEvaluation, String commentaires) {
         this.numero = numero;
         this.nom = nom;
         this.prenom = prenom;
@@ -110,33 +109,30 @@ public class Evaluation {
         this.commentaires = commentaires;
     }
 
+
     //Constructeur par defaut
     public Evaluation() {
     }
 
     //Methodes
-    private static Calendar convertDate(String strDate){
+    private static java.sql.Date convertDate(String strDate) {
         if (strDate == null) {
-            // Vous pourriez loguer une erreur ici et/ou lancer une exception
+
             return null;
         }
 
-        SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
 
-        try{
-            Date parseDate = (Date) dateFormat.parse(strDate);  // Note : Pas besoin de caster en (Date)
-            Calendar cal = Calendar.getInstance();
-            cal.setTime(parseDate);
-            return cal;
-        }catch (ParseException e){
+        try {
+            java.util.Date parseDate = dateFormat.parse(strDate);
+            return new java.sql.Date(parseDate.getTime());
+        } catch (ParseException e) {
             e.printStackTrace();
         }
         return null;
     }
 
 
-    // Méthode statique pour mapper les données de HttpServletRequest vers Evaluation
-    //Cette methode est l`equivalent de serialize en php
     public static Evaluation mapper(HttpServletRequest request) {
         int numero = Integer.parseInt(request.getParameter("numero"));
         String nom = request.getParameter("nom");
@@ -145,8 +141,15 @@ public class Evaluation {
         String telephone = request.getParameter("telephone");
         char sexe = request.getParameter("sexe").charAt(0);
         String note = request.getParameter("note");
-        Calendar dateEvaluation = convertDate(request.getParameter("dateEvaluation"));
-        String commentaire = request.getParameter("comentaire");
+
+        String strDateEvaluation = request.getParameter("dateEvaluation");
+
+        java.sql.Date dateEvaluation = convertDate(strDateEvaluation); //Apres plusieurs facons de faire, je n'ai pas reussi a faire fonctionner la methode convertDate
+
+        System.out.println("String dateEvaluation: " + strDateEvaluation);
+        System.out.println("SQL dateEvaluation: " + dateEvaluation);
+
+        String commentaire = request.getParameter("commentaires");
 
         return new Evaluation(numero, nom, prenom, courriel, telephone, sexe, note, dateEvaluation, commentaire);
     }

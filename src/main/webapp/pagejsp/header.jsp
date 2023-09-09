@@ -1,9 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="mesmodels.Evaluation" %>
-<head>
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/res/css/header.css">
-</head>
 
+<link rel="stylesheet" href="${pageContext.request.contextPath}/res/css/header.css">
 
 <header class="header-color">
     <div class="logo">

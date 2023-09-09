@@ -13,15 +13,8 @@
 
 
 <div class="container">
-    <p>Allo je suis l'index putain de merde!!!</p>
+    <p>Allo je suis l'index!!</p>
 </div>
-
-
-
-
-
-
-
 
 <!-- Scripts Bootstrap -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -34,3 +27,10 @@
         crossorigin="anonymous"></script>
 </body>
 </html>
+
+
+
+
+
+
+

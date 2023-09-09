@@ -20,30 +20,43 @@ public class AjouterServlet extends HttpServlet {
         evaluationDbContext = new EvaluationDbContext();
     }
 
-
+    /**
+     * Gère les requêtes GET en redirigeant l'utilisateur vers la page "ajouterEvaluation.jsp".
+     *
+     * @param request  l'objet HttpServletRequest qui contient la requête que le client a faite au servlet
+     * @param response l'objet HttpServletResponse qui contient la réponse que le servlet envoie au client
+     * @throws ServletException si le forward échoue pour des raisons liées au servlet
+     * @throws IOException      si le forward échoue pour des raisons d'entrée/sortie
+     */
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // Afficher la page "ajouterEvaluation.jsp"
         request.getRequestDispatcher("/pagejsp/ajouterEvaluation.jsp").forward(request, response);
     }
 
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+    /**
+     * Traite les requêtes POST en récupérant les données du formulaire d'ajout d'évaluation,
+     * en créant une nouvelle évaluation et en l'ajoutant à la base de données avant de
+     * rediriger l'utilisateur vers le HomeServlet.
+     *
+     * @param request  l'objet HttpServletRequest qui contient les informations de la requête client, y compris
+     *                 les données du formulaire que l'on souhaite récupérer
+     * @param response l'objet HttpServletResponse qui contient la réponse que le servlet envoie au client
+     *
+     * @throws ServletException si la redirection échoue pour des raisons liées au servlet
+     * @throws IOException si la redirection échoue pour des raisons d'entrée/sortie
+     */
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // Recupere les donnees du formulaire d'ajout
         Evaluation e = new Evaluation();
         e = e.mapper(request);
+
+        // Ajouter la nouvelle évaluation dans la base de données
         evaluationDbContext.Ajouter(e);
+
+        // Rediriger l'utilisateur vers HomeServlet
         request.getRequestDispatcher("/HomeServlet").forward(request, response);
     }
+
 }
 
-// le servlet "AjouterServlet" hérite de la classe HttpServlet et utilise l'annotation @WebServlet pour définir le chemin
-// ("/ajouter") auquel le servlet répondra.
-//
-//La méthode init est utilisée pour initialiser la propriété evaluationDbContext lorsque le servlet est créé.
-//
-//La méthode doPost est utilisée pour gérer les requêtes POST, généralement utilisées pour soumettre des formulaires.
-// À l'intérieur de cette méthode, nous récupérons les paramètres de la requête (les données de l'évaluation à ajouter),
-// créons une nouvelle instance d'évaluation avec ces données, ajoutons l'évaluation à la liste via la propriété evaluationDbContext, puis redirigeons l'utilisateur vers la page d'accueil après l'ajout.
-//
-//Assurez-vous de bien ajuster la configuration de l'objet dateevaluation selon vos besoins et la manière dont vous souhaitez
-// initialiser la date et l'heure.

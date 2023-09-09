@@ -13,15 +13,16 @@
     <title>Accueil</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/res/css/style.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/res/css/header.css">
+
     <script src="${pageContext.request.contextPath}/res/js/contact.js" type="text/javascript"></script>
 
 </head>
 
-
 <body>
 
-<%@ include file="header.jsp" %>
+<jsp:include page="header.jsp" />
 
 <div class="content container mt-4 mb-4 shadow p-3 mb-5 bg-white rounded col-lg-6 mx-auto">
     <h2 class="text-center">Contact</h2>
@@ -48,9 +49,11 @@
     </form>
 </div>
 
-
-
 </body>
 </html>
+
+
+
+
 ```
 

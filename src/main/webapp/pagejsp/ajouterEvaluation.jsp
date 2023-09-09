@@ -7,21 +7,21 @@
     <title>Accueil</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/res/css/style.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/res/css/header.css">
+
     <script src="${pageContext.request.contextPath}/res/js/ajouter.js" type="text/javascript"></script>
 </head>
 
-
 <body>
 
-<%@ include file="header.jsp" %>
-
+<jsp:include page="header.jsp" />
 
 <div class="container mt-5">
     <div class="row justify-content-center">
         <div class="col-lg-6">
             <div class="p-4 border rounded shadow">
-                <h2 class="text-center">Ajouter Évaluation</h2>
+                <h2 class="text-center">Ajouter une évaluation</h2>
 
                 <form action="AjouterServlet" method="post">
                     <div class="mb-3">
@@ -90,11 +90,14 @@
     </div>
 </div>
 
-
-
-
 </body>
 </html>
+
+
+
+
+
+
 ```
 
 ```
