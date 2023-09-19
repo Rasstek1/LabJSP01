@@ -4,6 +4,8 @@ import jakarta.servlet.http.HttpServletRequest;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 
 public class Evaluation {
     private int numero;
@@ -13,7 +15,7 @@ public class Evaluation {
     private String telephone;
     private char sexe;
     private String note;
-    private java.sql.Date dateEvaluation;
+    private Calendar dateEvaluation;
     private String commentaires;
 
 
@@ -78,11 +80,11 @@ public class Evaluation {
         this.note = note;
     }
 
-    public java.sql.Date getDateEvaluation() {
+    public Calendar getDateEvaluation() {
         return dateEvaluation;
     }
 
-    public void setDateEvaluation(java.sql.Date dateEvaluation) {
+    public void setDateEvaluation(Calendar dateEvaluation) {
         this.dateEvaluation = dateEvaluation;
     }
 
@@ -97,7 +99,7 @@ public class Evaluation {
 
 
     //Constructeur
-    public Evaluation(int numero, String nom, String prenom, String courriel, String telephone, char sexe, String note, java.sql.Date dateEvaluation, String commentaires) {
+    public Evaluation(int numero, String nom, String prenom, String courriel, String telephone, char sexe, String note, Calendar dateEvaluation, String commentaires) {
         this.numero = numero;
         this.nom = nom;
         this.prenom = prenom;
@@ -115,7 +117,7 @@ public class Evaluation {
     }
 
     //Methodes
-    private static java.sql.Date convertDate(String strDate) {
+    private static Date convertDate(String strDate) {
         if (strDate == null) {
 
             return null;
@@ -125,7 +127,7 @@ public class Evaluation {
 
         try {
             java.util.Date parseDate = dateFormat.parse(strDate);
-            return new java.sql.Date(parseDate.getTime());
+            return  parseDate;
         } catch (ParseException e) {
             e.printStackTrace();
         }
@@ -142,16 +144,16 @@ public class Evaluation {
         char sexe = request.getParameter("sexe").charAt(0);
         String note = request.getParameter("note");
 
-        String strDateEvaluation = request.getParameter("dateEvaluation");
+        String strDateEvaluation = request.getParameter("dateevaluation");
 
-        java.sql.Date dateEvaluation = convertDate(strDateEvaluation); //Apres plusieurs facons de faire, je n'ai pas reussi a faire fonctionner la methode convertDate
+        Date dateEvaluation = Evaluation.convertDate(strDateEvaluation); //Apres plusieurs facons de faire, je n'ai pas reussi a faire fonctionner la methode convertDate
 
-        System.out.println("String dateEvaluation: " + strDateEvaluation);
-        System.out.println("SQL dateEvaluation: " + dateEvaluation);
+        Calendar dateEvaluation2 = Calendar.getInstance();
+        dateEvaluation2.setTime(dateEvaluation);
 
         String commentaire = request.getParameter("commentaires");
 
-        return new Evaluation(numero, nom, prenom, courriel, telephone, sexe, note, dateEvaluation, commentaire);
+        return new Evaluation(numero, nom, prenom, courriel, telephone, sexe, note, dateEvaluation2, commentaire);
     }
 
 }

@@ -5,13 +5,14 @@ header {
     display: flex;
     justify-content: flex-start; /* Aligner les éléments à l'extrémité gauche */
     align-items: center; /* Centrer verticalement */
-    padding: 10px;
+    padding: 5px;
 }
 
 nav {
     background-color: #333;
     text-align: center;
-    height: 20px;
+    height: 40px;
+
 }
 
 nav a {

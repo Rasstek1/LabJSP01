@@ -12,9 +12,9 @@ public class EvaluationDbContext implements IEvaluationContext{
     private static List<Evaluation> listeEvalutions = new ArrayList<>()
     {
         {
-            add(new Evaluation(1, "Dupont", "Jean", "jean.dupont@mail.com", "0123456781", 'M', "Excellente", java.sql.Date.valueOf("2023-09-01"), "Très bon travail !"));
-            add(new Evaluation(2, "Martin", "Sophie", "sophie.martin@mail.com", "0123456782", 'F', "Bonne", java.sql.Date.valueOf("2023-09-02"), "Fait des progrès."));
-            add(new Evaluation(3, "Tremblay", "Michel", "michel.tremblay@mail.com", "0123456783", 'M', "Très bonne", java.sql.Date.valueOf("2023-09-03"), "Excellent travail !"));
+            add(new Evaluation(1, "Dupont", "Jean", "jean.dupont@mail.com", "0123456781", 'M', "Excellente", Calendar.getInstance (), "Très bon travail !"));
+            add(new Evaluation(2, "Martin", "Sophie", "sophie.martin@mail.com", "0123456782", 'F', "Bonne", Calendar.getInstance (), "Fait des progrès."));
+            add(new Evaluation(3, "Tremblay", "Michel", "michel.tremblay@mail.com", "0123456783", 'M', "Très bonne", Calendar.getInstance (), "Excellent travail !"));
 
         }
 

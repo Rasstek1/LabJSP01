@@ -10,26 +10,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f296f105-c191-40b1-9fd2-8b0340f228bb" name="Changes" comment="design push">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/js/modif.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mesmodels/Evaluation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mesmodels/Evaluation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mesmodels/EvaluationDbContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mesmodels/EvaluationDbContext.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/messervlets/AjouterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/messervlets/AjouterServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/messervlets/HomeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/messervlets/HomeServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/messervlets/ListeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/messervlets/ListeServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/messervlets/ModifierServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/messervlets/ModifierServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/messervlets/SupprimerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/messervlets/SupprimerServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/css/accueil.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/accueil.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/pagejsp/accueil.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pagejsp/accueil.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pagejsp/ajouterEvaluation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pagejsp/ajouterEvaluation.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pagejsp/contact.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pagejsp/contact.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pagejsp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pagejsp/header.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/pagejsp/listeEvaluation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pagejsp/listeEvaluation.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pagejsp/modifierEvaluation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pagejsp/modifierEvaluation.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +81,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/nitra/IdeaProjects/LabJSP01",
+    "last_opened_file_path": "C:/Users/nitra/Documents/JSP_Project/LabJSP01",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -219,7 +209,9 @@
       <workItem from="1693933919257" duration="9340000" />
       <workItem from="1694134263732" duration="2701000" />
       <workItem from="1694181250668" duration="10163000" />
-      <workItem from="1694202587494" duration="16141000" />
+      <workItem from="1694202587494" duration="16344000" />
+      <workItem from="1694655238171" duration="6690000" />
+      <workItem from="1695155064252" duration="1786000" />
     </task>
     <task id="LOCAL-00001" summary="2iem push">
       <option name="closed" value="true" />
@@ -285,7 +277,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694207684031</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="final push date ne fonctionne pas">
+      <option name="closed" value="true" />
+      <created>1694221015074</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1694221015074</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,6 +299,7 @@
     <MESSAGE value="5iem push" />
     <MESSAGE value="fonctionnel push" />
     <MESSAGE value="design push" />
-    <option name="LAST_COMMIT_MESSAGE" value="design push" />
+    <MESSAGE value="final push date ne fonctionne pas" />
+    <option name="LAST_COMMIT_MESSAGE" value="final push date ne fonctionne pas" />
   </component>
 </project>

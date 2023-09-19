@@ -52,7 +52,7 @@
                                     <c:choose>
                                         <c:when test="${not empty e.dateEvaluation}">
                                             <!-- Affichez la valeur de date avec un formatage spécifié -->
-                                            <fmt:formatDate value="${e.dateEvaluation}" pattern="dd-MM-yyyy" />
+                                            <fmt:formatDate value="${e.dateEvaluation.time}" pattern="dd-MM-yyyy" />
                                         </c:when>
                                         <c:otherwise>
                                             Date non disponible

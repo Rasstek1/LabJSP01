@@ -19,7 +19,7 @@ public class ModifierServlet extends HttpServlet {
 
     @Override
     public void init() throws ServletException {
-        super.init();
+
 
     }
     /**

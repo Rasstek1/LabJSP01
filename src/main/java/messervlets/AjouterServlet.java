@@ -16,7 +16,7 @@ public class AjouterServlet extends HttpServlet {
 
 
     public void init() throws ServletException {
-        super.init();
+
         evaluationDbContext = new EvaluationDbContext();
     }
 
@@ -49,7 +49,7 @@ public class AjouterServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // Recupere les donnees du formulaire d'ajout
         Evaluation e = new Evaluation();
-        e = e.mapper(request);
+        e = Evaluation.mapper(request);
 
         // Ajouter la nouvelle évaluation dans la base de données
         evaluationDbContext.Ajouter(e);
